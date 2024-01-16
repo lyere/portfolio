@@ -1,0 +1,198 @@
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+
+}
+
+@keyframes blinkCaret {
+    from, to {border-color: transparent;}
+    50% {border-color: white;}
+}
+
+@keyframes fadeInCentre1 {
+   
+0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9)}
+    
+ 100% {
+    opacity: .1;
+    transform: translateY(0px) scale(1);
+ }
+}
+
+@keyframes fadeInCentre2 {
+   
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9)}
+        
+     100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+     }
+        
+}
+@font-face {
+    font-family: 'Atwriter';
+    src: url(font/atwriter.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(img/backgound.jpg);
+}
+
+.box-1 {
+
+    background-color: white;
+    height: 1700px;
+    width: 1750px;
+    display: flex;
+    position: absolute;
+    top: 14%;
+    right: 4.5%;
+    opacity: .1;
+    border-radius: 4%;
+    animation-name: fadeInCentre1;
+    animation-duration: 1s;
+   
+}
+
+.heading-1 {
+    max-width: 47rem;
+    color: white;
+    font-family: 'Atwriter';
+    font-size: 6rem;
+    overflow: hidden;
+    border-right: .07em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .20em;
+    animation: 
+    typing 3.5s steps(50, end),
+    blinkCaret .75s step-end infinite;
+}
+
+.image-1 {
+    animation-name: fadeInCentre2;
+    animation-duration: 1s ;
+    display: flex;
+    max-width: 50vh;
+    margin-top: 4vh;
+    margin-left: 13vh;
+    border-radius: 100px;
+}
+
+.objective {
+    max-width: 14rem;
+    color: white;
+    font-family: 'Atwriter';
+    font-size: 2rem;
+    overflow: hidden;
+    border-right: .07em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .20em;
+    animation: 
+    typing 4s steps(50, end),
+    blinkCaret .75s step-end infinite;
+    margin-top: -38rem;
+    margin-right: 42rem;
+}
+
+.skills {
+    max-width: 10rem;
+    color: white;
+    font-family: 'Atwriter';
+    font-size: 2rem;
+    overflow: hidden;
+    border-right: .07em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .20em;
+    animation: 
+    typing 4s steps(50, end),
+    blinkCaret .75s step-end infinite;
+    margin-top: 5rem;
+    margin-right: 91rem;
+}
+
+.education {
+    max-width: 14rem;
+    color: white;
+    font-family: 'Atwriter';
+    font-size: 2rem;
+    overflow: hidden;
+    border-right: .07em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .20em;
+    animation: 
+    typing 4s steps(50, end),
+    blinkCaret .75s step-end infinite;
+    margin-top: 4rem;
+    margin-right: 42rem;
+}
+
+.projects {
+    max-width: 12rem;
+    color: white;
+    font-family: 'Atwriter';
+    font-size: 2rem;
+    overflow: hidden;
+    border-right: .07em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .20em;
+    animation: 
+    typing 4s steps(50, end),
+    blinkCaret .75s step-end infinite;
+    margin-top: -55rem;
+    margin-right: 30rem;
+}
+
+.objective-para {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 44rem;
+    margin-left: 48rem;
+    margin-top: 4rem;
+    font-size: 1.4rem;
+    animation: fadeInCentre2 1s;
+}
+
+.education-para {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 14rem;
+    margin-left: 48rem;
+    margin-top: 4rem;
+    font-size: 1.4rem;
+    animation: fadeInCentre2 1s;
+}
+
+.skills-para {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 28rem;
+    margin-top: 3rem;
+    margin-left: 10rem;
+    font-size: 1.4rem;
+    animation: fadeInCentre2 1s;
+    
+}
+
+.projects-para {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 44rem;
+    margin-top: 2rem;
+    margin-left: 60rem;
+    font-size: 1.4rem;
+    animation: fadeInCentre2 1s;
+    
+}
